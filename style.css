@@ -1,0 +1,318 @@
+/* Resourcen laden */
+
+@font-face {
+    font-family: Ailerons;
+    src: ./fonts/ailerons-typeface.otf;
+}
+
+/* Basis Styles */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eceff5;
+    color: #032575;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 1em 0;
+}
+
+p{
+    margin:0;
+    padding: 1em 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: .5em 0;
+}
+/*
+.btn:hover{
+    background: #fff;
+    color: #333;
+}
+
+/* Header Kopfzeile */
+
+.Kopfzeile{
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.h1{
+    padding-top: 100px;
+    color: #fff;
+    text-align: center;
+    font-family: Ailerons;
+    font-size: 72px;
+}
+
+.Kopfzeile .inhalt-wrap,
+.bereich1 .inhalt-wrap{
+    padding: 0 1.5em;
+}
+
+/* Bereich1 */
+
+.bereich1{
+    background: #333;
+    color: #fff;
+    padding-bottom: 2em;
+}
+
+#bereich2{
+    background: #333;
+    color: #fff;
+    padding-bottom: 2em;
+}
+.card{
+    padding-top: 0px;
+    color: #032575;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hauptbereich ul{
+    margin-bottom: 1em;
+    background: #032575;
+    color: aqua;
+}
+
+.kachel{
+    padding: 1em;
+}
+.kachel img{
+    display: block;
+    width: 150px;
+    margin: auto;
+    
+}
+.kachel-inhalt{
+    padding: 1.5em;
+}
+
+.bieten{
+    text-align: left;
+    padding: 2em;
+}
+.text_dual{
+
+}
+
+@media(min-width:900px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 1080px)) 1fr;
+    }
+    .haupt_grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 1080px)) 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 5px;
+    }
+    .bild_li_ob{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        }
+    .bild_re_ob{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        }
+    .bild_li_un{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        }
+    .bild_re_un{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        }
+    .text_ueber_bilder{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        opacity: 1;
+        padding-top: 0px;
+        color: #fff;
+        text-align: center;
+        font-family: Ailerons;
+        font-size: 20px;
+        text-shadow: 0 0 2px #032575;
+    }
+    .rec_row{
+        width: 120px;
+        text-shadow: 0 0 2px #032575;
+    }
+    .haupt_grid h3{
+        grid-column: 2/4;
+        color: #fff;
+        text-align: center;
+        font-family: Ailerons;
+        font-size: 20px;
+        text-shadow: 0 0 2px #032575;
+    }
+    .recruiting {
+        grid-column: 2/4;
+        grid-row: 8/9;
+  }
+    .kacheln {
+     display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .Beschreibung{
+        grid-column: 2/4;
+        justify-self: center;
+        padding: 1.5em;
+        background: #666;
+    }   
+    .bereich3{
+        grid-column: 2/4;
+        grid-row: 8/9;
+    }
+
+    .focus{
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .focus h3{
+        grid-column: 1/3;
+    }
+    .absatz_2{
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .absatz_2 h2{
+        grid-column: 1/3;
+    }
+    .bild_dual{
+        grid-column: 1/1;
+        max-width: 800px;
+        display: block;
+        margin: auto;
+        padding: 1em;
+    }
+    .text_dual{
+        grid-column: 2/3;
+        text-align: center;
+        font-size: 1em;
+        padding: 1.5em;
+        display: block;
+        margin: auto;
+    }
+    .absatz_3{
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .absatz_3 h2{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+    .bild_dual_2{
+        grid-column: 2/3;
+        max-width: 800px;
+        display: block;
+        margin: auto;
+        padding: 1em;
+    }
+    .text_dual_2{
+        grid-column: 1/2;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1em;
+        padding: 1.5em;
+        display: block;
+        margin: auto;
+    }
+
+}
+/*
+}
+body, #slider, .wrap, .slide-content{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+} 
+.wrap {
+    position: relative;
+  }
+  
+  .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide1 {
+    background-image: url(./images/Bild1.jpg);
+  }
+  .slide2 {
+    background-image: url(./images/Idris_1.png);
+  }
+  .slide3 {
+    background-image: url(./images/Merchantman.png);
+  }
+  
+  .slide-content {
+    display: flex;
+    flex-directio
+    flex-direction: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slide-content span {
+    font-size: 5rem;
+    color: #fff;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  #arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+  }
+  
+  #arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+  }*/
+  
