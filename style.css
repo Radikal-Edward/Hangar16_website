@@ -10,11 +10,27 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eceff5;
+    background: #e2e8e9;
     color: #032575;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
+}
+
+.Beschreibung{
+    justify-self: center;
+    padding: 1.5em;
+    background:#e2e8e9;
+    border-color: #111111;
+ 
+    align: left;
+}
+.Beschreibung p{
+    margin:0;
+    padding: 1em;
+    text-align: left;
+    background: #171717;
+    color: #e2e8e9;
 }
 
 img{
@@ -23,7 +39,7 @@ img{
     height: auto;
 }
 
-h1, h2, h3{
+h1, h3{
     margin: 0;
     padding: 1em 0;
 }
@@ -40,9 +56,9 @@ p{
     text-decoration: none;
     padding: 1em 2em;
     border: 1px solid #666;
-    margin: .5em 0;
+    margin: 0;
 }
-/*
+
 .btn:hover{
     background: #fff;
     color: #333;
@@ -55,6 +71,7 @@ p{
     color: #fff;
     text-align: center;
     font-size: 20px;
+    opacity: 10%;
 }
 
 .h1{
@@ -116,6 +133,80 @@ p{
 .text_dual{
 
 }
+h3{
+    background: #171717;
+    color: #e2e8e9;
+    font-family: ailerons;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.unten{
+    background: #171717;
+    color: #e2e8e9;
+    font-family: ailerons; 
+}
+.kleiner_container h3{
+    background: #171717;
+    color: #e2e8e9;
+    font-family: ailerons;
+    font-size: 1.5em;
+    padding: 1em;
+}
+.kleiner_container p{
+    color: #171717;
+    background: #e2e8e9;
+    text-align: justify;
+}
+.icon_cos img{
+    height:75px;
+    width: auto;
+    }
+.text_dual{
+    text-align: center;
+    font-size: 1em;
+    padding: 1.5em;
+    display: block;
+    color: #171717;
+    margin: auto;
+    }
+h2{
+        padding-top: 1em;
+        font-family: ailerons;
+        font-size: 4em;
+        color: #171717;
+    }
+span{
+    vertical-align: middle;
+}
+.unten{
+    text-align: center;
+    margin-top: 4em;
+}
+.icon_cos p{
+    padding-right: 1em;
+    }
+.absatz_3{
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+.bild_dual_2{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+.text_dual_2{
+    text-align: center;
+    font-size: 1em;
+    padding: 1.5em;
+    display: block;
+    margin: auto;
+}
+.absatz_2{
+    padding-top: 8em;
+    padding-bottom: 8em;
+} 
 
 @media(min-width:900px){
     .grid{
@@ -127,6 +218,9 @@ p{
         grid-template-columns: 1fr repeat(2, minmax(auto, 1080px)) 1fr;
         grid-template-rows: auto;
         grid-row-gap: 5px;
+    }
+    .haupt_grid img{
+        grid-column: 1/5;
     }
     .bild_li_ob{
         grid-column: 2/3;
@@ -147,41 +241,37 @@ p{
     .text_ueber_bilder{
         grid-column: 2/4;
         grid-row: 2/4;
-        opacity: 1;
-        padding-top: 0px;
-        color: #fff;
+        padding-top: 1px;
+        color: unset;
         text-align: center;
         font-family: Ailerons;
-        font-size: 20px;
-        text-shadow: 0 0 2px #032575;
+        font-size: 70px;
+        text-shadow: 0 0 2px #333;
+    }
+
+    .text_ueber_bilder img:hover{
+        content: url('./images/Hangar16_Head_2.png');
     }
     .rec_row{
         width: 120px;
         text-shadow: 0 0 2px #032575;
     }
-    .haupt_grid h3{
-        grid-column: 2/4;
-        color: #fff;
-        text-align: center;
-        font-family: Ailerons;
-        font-size: 20px;
-        text-shadow: 0 0 2px #032575;
-    }
-    .recruiting {
+ .recruiting {
         grid-column: 2/4;
         grid-row: 8/9;
   }
     .kacheln {
      display: grid;
         grid-template-columns: repeat(4,1fr);
+        padding-top: 3em;
+        padding-bottom: 4em;
     }
 
     .Beschreibung{
         grid-column: 2/4;
         justify-self: center;
-        padding: 1.5em;
-        background: #666;
-    }   
+        padding-top: 10em;
+    }
     .bereich3{
         grid-column: 2/4;
         grid-row: 8/9;
@@ -201,8 +291,8 @@ p{
         grid-row: 4/5;
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .absatz_2 h2{
+    } 
+    h2{
         grid-column: 1/3;
     }
     .bild_dual{
@@ -214,11 +304,6 @@ p{
     }
     .text_dual{
         grid-column: 2/3;
-        text-align: center;
-        font-size: 1em;
-        padding: 1.5em;
-        display: block;
-        margin: auto;
     }
     .absatz_3{
         grid-column: 2/4;
@@ -226,93 +311,42 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .absatz_3 h2{
-        grid-column: 1/3;
-        grid-row: auto;
-    }
     .bild_dual_2{
         grid-column: 2/3;
-        max-width: 800px;
-        display: block;
-        margin: auto;
-        padding: 1em;
     }
     .text_dual_2{
         grid-column: 1/2;
-        grid-row: 2;
-        text-align: center;
-        font-size: 1em;
-        padding: 1.5em;
-        display: block;
-        margin: auto;
     }
-
+    .grid_be{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2em;
+    }
+    .grid_kc{
+        display: grid;
+        grid-template-rows: 80px;
+    }
+    .grid_tb{
+        display: grid;
+        grid-template-rows: 80px;
+    }
+    .kleiner_container h3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .kleiner_container p{
+        grid-column: 2/3;
+        grid-row: 3/5;
+   }
+    .grid_ic{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    }
+    .icon_cos img{
+    grid-column: 1/2;
+    }
+    .unten{
+        grid-column: 2/4;
+        grid-row: 9/10;
+    }
 }
-/*
-}
-body, #slider, .wrap, .slide-content{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-} 
-.wrap {
-    position: relative;
-  }
-  
-  .slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide1 {
-    background-image: url(./images/Bild1.jpg);
-  }
-  .slide2 {
-    background-image: url(./images/Idris_1.png);
-  }
-  .slide3 {
-    background-image: url(./images/Merchantman.png);
-  }
-  
-  .slide-content {
-    display: flex;
-    flex-directio
-    flex-direction: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .slide-content span {
-    font-size: 5rem;
-    color: #fff;
-  }
-  
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  #arrow-left {
-    border-width: 30px 40px 30px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 30px;
-  }
-  
-  #arrow-right {
-    border-width: 30px 0 30px 40px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 30px;
-  }*/
-  
